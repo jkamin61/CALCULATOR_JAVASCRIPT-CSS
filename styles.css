@@ -75,3 +75,14 @@ body {
     color: white;
 }
 
+.calc__number:hover, .calc__zero:hover {background-color: dimgrey}
+.calc__func:hover, .calc__reset:hover {background-color: rgb(255, 213, 128)
+}
+
+.calc__number:active, .calc__zero:active {
+    background-color: #222222;
+    transform: translateY(2px);
+}.calc__func:active, .calc__reset:active {
+    background-color: darkorange;
+    transform: translateY(2px);
+}

@@ -15,6 +15,11 @@ const calculate = (button) => {
         dataArray.push(value);
         equation = dataArray.join('');
         resultScreen.textContent = equation;
+        if (resultScreen.textContent.length === 17) {
+            alert("Sorry, that's too many digits!");
+            dataArray = [];
+            resultScreen.textContent = '';
+        }
     }
 
 }
